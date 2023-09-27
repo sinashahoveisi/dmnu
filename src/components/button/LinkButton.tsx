@@ -35,7 +35,7 @@ const LinkButton: FC<Props> = ({
   const clx = useMemo(
     () =>
       cn(
-        'px-4 min-h-[2.5rem] min-w-fit text-center text-sm font-medium text-body justify-center border-2 transition-all duration-300 my-2 flex shrink-0 items-center rounded-lg',
+        'min-h-[2.5rem] min-w-fit text-center text-sm font-medium text-body justify-center border-2 transition-all duration-300 my-2 flex shrink-0 items-center rounded-lg',
         className,
         {'bg-red-500 border-transparent': variant === 'danger' && !disabled},
         {'!text-red-500 border-transparent bg-transparent': variant === 'danger-ghost' && !disabled},

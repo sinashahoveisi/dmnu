@@ -86,7 +86,7 @@ const TextInput: ForwardRefRenderFunction<refProps, Props> = (
           value={value}
           defaultValue={defaultValue}
           className={cn(
-            'text-md w-full rounded-lg border p-3 py-1 text-left',
+            'text-sm w-full rounded-lg border p-3 py-2 text-right',
             {'pl-12': leftElement},
             {'pr-12': rightElement},
             {'cursor-not-allowed bg-gray-200': disabled},

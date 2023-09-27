@@ -1,5 +1,5 @@
 import React, {type FC, memo, type ReactNode, useMemo} from 'react';
-import {Spinner} from 'components';
+import Spinner from 'components/loading/Spinner';
 import clsx from 'clsx';
 import type {ButtonVariant} from 'types/general';
 
@@ -37,7 +37,7 @@ const Button: FC<Props> = ({
   const clx = useMemo(
     () =>
       clsx(
-        'px-4 min-h-[2.5rem] min-w-fit text-center text-sm font-medium text-body justify-center border-2 transition-all duration-300 my-2 flex shrink-0 items-center rounded-lg',
+        'px-4 min-h-[2rem] min-w-fit text-center text-sm font-medium text-body justify-center border-2 transition-all duration-300 my-2 flex shrink-0 items-center rounded-lg',
         className,
         {'bg-red-500 border-transparent': variant === 'danger' && !disabled},
         {'!text-red-500 border-transparent bg-transparent': variant === 'danger-ghost' && !disabled},

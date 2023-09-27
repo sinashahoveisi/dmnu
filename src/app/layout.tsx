@@ -7,47 +7,47 @@ const vazirFont = localFont({
   variable: '--font-vazir',
   src: [
     {
-      path: '../assets/fonts/webfonts/Vazirmatn-UI-Thin.woff2',
+      path: '../assets/fonts/Vazirmatn-UI-FD-Thin.woff2',
       weight: '100',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/webfonts/Vazirmatn-UI-ExtraLight.woff2',
+      path: '../assets/fonts/Vazirmatn-UI-FD-ExtraLight.woff2',
       weight: '200',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/webfonts/Vazirmatn-UI-Light.woff2',
+      path: '../assets/fonts/Vazirmatn-UI-FD-Light.woff2',
       weight: '300',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/webfonts/Vazirmatn-UI-Regular.woff2',
+      path: '../assets/fonts/Vazirmatn-UI-FD-Regular.woff2',
       weight: '400',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/webfonts/Vazirmatn-UI-Medium.woff2',
+      path: '../assets/fonts/Vazirmatn-UI-FD-Medium.woff2',
       weight: '500',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/webfonts/Vazirmatn-UI-SemiBold.woff2',
+      path: '../assets/fonts/Vazirmatn-UI-FD-SemiBold.woff2',
       weight: '600',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/webfonts/Vazirmatn-UI-Bold.woff2',
+      path: '../assets/fonts/Vazirmatn-UI-FD-Bold.woff2',
       weight: '700',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/webfonts/Vazirmatn-UI-ExtraBold.woff2',
+      path: '../assets/fonts/Vazirmatn-UI-FD-ExtraBold.woff2',
       weight: '800',
       style: 'normal'
     },
     {
-      path: '../assets/fonts/webfonts/Vazirmatn-UI-Black.woff2',
+      path: '../assets/fonts/Vazirmatn-UI-FD-Black.woff2',
       weight: '900',
       style: 'normal'
     }
