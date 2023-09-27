@@ -1,8 +1,57 @@
-import './globals.css'
+import '../assets/styles/main.scss'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+const vazirFont = localFont({
+  variable: '--font-vazir',
+  src: [
+    {
+      path: '../assets/fonts/webfonts/Vazirmatn-UI-Thin.woff2',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/webfonts/Vazirmatn-UI-ExtraLight.woff2',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/webfonts/Vazirmatn-UI-Light.woff2',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/webfonts/Vazirmatn-UI-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/webfonts/Vazirmatn-UI-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/webfonts/Vazirmatn-UI-SemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/webfonts/Vazirmatn-UI-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/webfonts/Vazirmatn-UI-ExtraBold.woff2',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/webfonts/Vazirmatn-UI-Black.woff2',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +64,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fa" className={vazirFont.variable}>
+      <body>{children}</body>
     </html>
   )
 }
