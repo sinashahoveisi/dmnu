@@ -5,7 +5,6 @@ import Button from 'components/button/Button';
 import ProductCard from 'components/card/ProductCard';
 import times from 'lodash/times';
 import ScrollSpy from 'components/scroll/ScrollSpy';
-import clsx from 'clsx';
 
 const categories = ['میوه', 'پر‌طرفدارها', 'آبمیوه', 'اسپشیال', 'آبمیوه ترکیبی', 'شیک'];
 
@@ -14,8 +13,8 @@ function Home() {
     <main>
       <header>
         <div className="header">
-          <div className="container relative flex justify-end">
-            <Button title="ورود" />
+          <div className="container relative flex justify-end pt-3">
+            <Button title="ورود" className="px-6" />
           </div>
         </div>
       </header>
@@ -31,7 +30,12 @@ function Home() {
           <LinkButton title="اطلاعات بیشتر" variant="ghost" href="/" />
         </div>
         <h1 className="text-xl">آبمیوه و بستنی توچال (شریعتی)</h1>
-        <LinkButton title="0921212121" variant="ghost" className="font-light text-indigo-800" href="tel:0921212121" />
+        <LinkButton
+          title="0921212121"
+          variant="ghost"
+          className="font-light !text-indigo-800 underline"
+          href="tel:0921212121"
+        />
       </div>
       <div className="container sticky top-0 bg-white py-4">
         <div className="flex flex-col space-y-6">

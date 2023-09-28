@@ -38,14 +38,10 @@ const ScrollSpy: FC<props> = ({sections}) => {
   return (
     <ul className="w-full flex flex-row items-center space-x-6 space-x-reverse">
       {sections?.map((category) => (
-        // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
         <li
           key={category}
-          onClick={() => {
-            scrollTo('#categories', `#${category}`);
-          }}
-          className={clsx('text-xs font-semibold p-2 rounded cursor-pointer', {
-            'bg-black text-white': activeSection === category
+          className={clsx('text-xs font-semibold p-2 rounded cursor-pointer hover:bg-gray-100', {
+            '!bg-black text-white': activeSection === category
           })}>
           <a
             href={`#${category}`}
