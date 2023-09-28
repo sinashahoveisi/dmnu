@@ -60,7 +60,7 @@
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: rgba(128, 128, 128, 0.3);
-    opacity: 0.3;
+    opacity: 0.4;
     border-radius: 10px;
   }
 
@@ -69,7 +69,11 @@
   }
 
   body {
-    @apply text-pen pb-10;
+    @apply text-pen ltr pb-10;
+    :first-child {
+      direction: rtl;
+    }
+
   }
 
   .header {

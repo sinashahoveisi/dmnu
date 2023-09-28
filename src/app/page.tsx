@@ -2,12 +2,14 @@ import Image from 'next/image';
 import TextInput from 'components/input/Input';
 import LinkButton from 'components/button/LinkButton';
 import Button from 'components/button/Button';
+import ProductCard from 'components/card/ProductCard';
 import times from 'lodash/times';
-import ProductCard from '../components/card/ProductCard';
+import ScrollSpy from 'components/scroll/ScrollSpy';
+import clsx from 'clsx';
 
 const categories = ['میوه', 'پر‌طرفدارها', 'آبمیوه', 'اسپشیال', 'آبمیوه ترکیبی', 'شیک'];
 
-export default function Home() {
+function Home() {
   return (
     <main>
       <header>
@@ -33,13 +35,7 @@ export default function Home() {
       </div>
       <div className="container sticky top-0 bg-white py-4">
         <div className="flex flex-col space-y-6">
-          <ul className="w-full flex flex-row items-center space-x-8 space-x-reverse">
-            {categories?.map((category) => (
-              <li key={category} className="text-sm font-semibold">
-                {category}
-              </li>
-            ))}
-          </ul>
+          <ScrollSpy sections={categories} />
           <TextInput
             type="text"
             name="postal_code"
@@ -48,18 +44,20 @@ export default function Home() {
           />
         </div>
       </div>
-      <section className="container my-4">
+      <section id="categories" className="container my-4">
         {categories?.map((category: string) => (
-          <div key={category}>
+          <section key={category} id={category}>
             <h2 className="text-sm font-normal divide-text">{category}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:gap-4 my-4">
               {times(4, (index: number) => (
                 <ProductCard key={index} />
               ))}
             </div>
-          </div>
+          </section>
         ))}
       </section>
     </main>
   );
 }
+
+export default Home;

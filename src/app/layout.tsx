@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: ReactNode}) {
   return (
-    <html lang="fa" className={vazirFont.variable}>
+    <html lang="fa" dir="rtl" className={vazirFont.variable}>
       <body>{children}</body>
     </html>
   );

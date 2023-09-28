@@ -57,6 +57,7 @@
     "no-console": "warn",
     "valid-typeof": "error",
     "camelcase": "off",
+    "no-restricted-syntax": "off",
     "react/react-in-jsx-scope": "off",
     "react/no-danger": "off",
     "react-hooks/exhaustive-deps": "off",

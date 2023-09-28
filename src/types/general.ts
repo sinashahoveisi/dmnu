@@ -1,4 +1,3 @@
-
 export type ButtonVariant =
   | 'primary'
   | 'secondary'
@@ -9,3 +8,8 @@ export type ButtonVariant =
   | 'danger-ghost'
   | 'muted-outline'
   | 'ghost';
+
+export interface ScrollIntoViewOptionsProps {
+  behavior?: 'auto' | 'smooth';
+  block?: 'center' | 'end' | 'nearest' | 'start';
+}
