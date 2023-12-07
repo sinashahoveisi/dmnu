@@ -1,7 +1,7 @@
-import React, {FC, HTMLAttributeAnchorTarget, ReactNode, useMemo} from 'react';
+import {type FC, type HTMLAttributeAnchorTarget, type ReactNode, useMemo} from 'react';
 import Link from 'next/link';
-import {UrlObject} from 'url';
 import cn from 'clsx';
+import type {UrlObject} from 'url';
 import type {ButtonVariant} from 'types/general';
 
 interface Props {
@@ -29,7 +29,7 @@ const LinkButton: FC<Props> = ({
   disabled,
   isLoading,
   variant = 'primary',
-  width = 'w-full sm:w-fit'
+  width = 'w-fit'
 }) => {
   const isOutline: boolean = variant?.endsWith('outline');
   const clx = useMemo(
