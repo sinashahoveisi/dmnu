@@ -1,8 +1,12 @@
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import LinkButton from 'components/button/LinkButton';
-import LocationMap from 'components/map/LocationMap';
 import information from 'config/information';
 import type {ShiftWorkInterface} from 'types/resturant';
+
+const LocationMap = dynamic(() => import('components/map/LocationMap'), {
+  ssr: false
+});
 
 function AboutUs() {
   return (
