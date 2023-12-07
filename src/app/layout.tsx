@@ -56,6 +56,13 @@ const vazirFont = localFont({
 });
 
 export const metadata: Metadata = {
+  // metadataBase: new URL('https://dmnu.vercel.app/'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'fa-IR': '/'
+    }
+  },
   title: information.name,
   description: information.description,
   applicationName: information.name,
@@ -65,15 +72,27 @@ export const metadata: Metadata = {
     type: 'website',
     title: information.name,
     siteName: information.name,
+    images: '/images/logo.png',
     countryName: 'IR',
     description: information.description
   },
   twitter: {
+    card: 'summary_large_image',
     title: information.name,
+    images: ['/images/logo.png'],
     description: information.description
   },
   appleWebApp: {
     title: information.name
+  },
+  icons: {
+    icon: '/images/logo.png',
+    shortcut: '/images/logo.png',
+    apple: '/images/logo.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/images/logo.png'
+    }
   }
 };
 
