@@ -16,7 +16,7 @@ function ProductSection() {
 
   return (
     <div>
-      <div className="container sticky top-0 bg-white py-4">
+      <div className="container sticky top-0 bg-body py-4">
         <div className="flex flex-col space-y-6">
           <ScrollSpy categories={categories} />
           <TextInput type="text" name="search" placeholder="جستجو" onChange={onSearch} />

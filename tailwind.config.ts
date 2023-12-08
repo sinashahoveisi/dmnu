@@ -77,7 +77,7 @@ const config: Config = {
         ]
       },
       backgroundImage: {
-        cover: 'url("/images/cover.jpg")',
+        coverImg: 'url("/images/coverImg.png")',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       }
     }

@@ -9,7 +9,7 @@
 
   html,
   body {
-    @apply h-full font-body;
+    @apply h-full font-body bg-body;
     direction: rtl;
     overflow-x: hidden;
   }
@@ -77,9 +77,9 @@
   }
 
   .header {
-    @apply h-32 relative bg-cover bg-cover bg-center before:content-[''] before:absolute before:inset-x-0 before:inset-y-0;
+    @apply h-48 relative bg-coverImg bg-cover bg-center;
     &:before {
-      z-index: 0;
+      @apply content-[''] absolute inset-x-0 inset-y-0 z-0;
       background: linear-gradient(145deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%);
     }
   }

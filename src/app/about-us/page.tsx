@@ -30,29 +30,31 @@ function AboutUs() {
         <LinkButton
           title={information.phone}
           variant="ghost"
-          className="font-light !text-indigo-800 underline"
+          className="font-light !text-indigo-400 underline"
           href={`tel:${information.phone}`}
         />
       </div>
       <section id="map" className="container my-4">
         <LocationMap latitude={information.location.latitude} longitude={information.location.longitude} />
-        <div className="flex flex-row justify-between items-center space-x-3 space-x-reverse">
+        <div className="mt-2 flex flex-col sm:flex-row justify-between items-center sm:space-x-3 sm:space-x-reverse">
           <LinkButton
             title="مسیریابی با waze"
             className="flex-1"
+            width="w-full"
             href={`https://www.waze.com/ul?ll=${information.location.latitude},${information.location.longitude}&navigate=yes`}
           />
           <LinkButton
             title="مسیریابی با googleMap"
             className="flex-1"
+            width="w-full"
             href={`https://www.google.com/maps/dir/?api=1&destination=${information.location.latitude},${information.location.longitude}`}
           />
         </div>
       </section>
       <section id="shiftsWork" className="container my-4">
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-          <table className="w-full text-sm text-left rtl:text-right text-gray-500">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 text-center">
+          <table className="w-full text-sm text-left rtl:text-right text-gray-400">
+            <thead className="text-xs uppercase bg-gray-700 text-gray-400 text-center">
               <tr>
                 <th scope="col" className="px-6 py-3">
                   روز کاری
@@ -64,8 +66,8 @@ function AboutUs() {
             </thead>
             <tbody>
               {information.shiftsWork.map((shiftWork: ShiftWorkInterface) => (
-                <tr className="bg-white border-b hover:bg-gray-50 text-center">
-                  <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                <tr className="border-b bg-gray-800 border-gray-700 hover:bg-gray-600 text-center">
+                  <th scope="row" className="px-6 py-4 font-medium text-pen whitespace-nowrap">
                     {shiftWork.day}
                   </th>
                   <td className="px-6 py-4">{`${shiftWork.time.start} - ${shiftWork.time.end}`}</td>

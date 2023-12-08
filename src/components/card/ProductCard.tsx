@@ -18,9 +18,9 @@ const ProductCard: FC<props> = ({product}) => {
       <div className="flex flex-col space-y-2 p-1">
         <h3 className="text-base">{product?.name}</h3>
         <p className="text-xs text-gray-400">{product?.description}</p>
-        <p className="text-md text-zinc-600">
+        <p className="text-md text-primary">
           {product?.price?.toLocaleString()}
-          <span className="text-sm mr-2 text-zinc-400">تومان</span>
+          <span className="text-sm mr-2 text-zinc-600">تومان</span>
         </p>
       </div>
       <div className="flex flex-col justify-between">

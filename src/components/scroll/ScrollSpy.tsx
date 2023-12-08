@@ -42,8 +42,8 @@ const ScrollSpy: FC<props> = ({categories}) => {
       {categories?.map((category: CategoryInterface) => (
         <li
           key={category.id}
-          className={clsx('p-2 rounded cursor-pointer hover:bg-gray-100', {
-            '!bg-black text-white': activeSection === category.id
+          className={clsx('p-2 rounded cursor-pointer text-zinc-300 hover:bg-gray-100 hover:text-primary-dark', {
+            '!bg-primary !text-pen': activeSection === category.id
           })}>
           <a
             href={`#${category.id}`}

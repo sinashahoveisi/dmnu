@@ -4,15 +4,15 @@ $fontFamily: Vazirmatn, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI'
 $direction: rtl;
 
 :root {
-  --color-primary: #000;
-  --color-primary-dark: #fff;
-  --color-secondary: #fff;
+  --color-primary: #15803d;
+  --color-primary-dark: #052A19;
+  --color-secondary: #0a0a0a;
   --color-secondary-dark: #000;
-  --color-pen: #000;
-  --color-pen-light: #eef1f645;
-  --color-pen-dark: #424750;
-  --color-body: #fff;
-  --color-body-dark: #f4f4f4;
+  --color-body: #0a0a0a;
+  --color-body-light: #eef1f645;
+  --color-body-dark: #424750;
+  --color-pen: #f3f4f6;
+  --color-pen-dark: #f4f4f4;
   --font-family: $fontFamily;
   --toastify-font-family: $fontFamily;
 }
