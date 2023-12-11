@@ -57,12 +57,12 @@ const vazirFont = localFont({
 
 export const metadata: Metadata = {
   // metadataBase: new URL('https://dmnu.vercel.app/'),
-  alternates: {
-    canonical: '/',
-    languages: {
-      'fa-IR': '/'
-    }
-  },
+  // alternates: {
+  //   canonical: '/',
+  //   languages: {
+  //     'fa-IR': '/'
+  //   }
+  // },
   title: information.name,
   description: information.description,
   applicationName: information.name,
